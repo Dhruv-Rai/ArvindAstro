@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" },
+
+    { "source": "/public/(.*)", "destination": "/public/$1" },
+    { "source": "/images/(.*)", "destination": "/images/$1" },
+    { "source": "/css/(.*)", "destination": "/css/$1" },
+    { "source": "/js/(.*)", "destination": "/js/$1" },
+
+    { "source": "/services/puja/:category/:anything", "destination": "/services/puja/index.html" },
+    { "source": "/services/puja/:category", "destination": "/services/puja/index.html" },
+    { "source": "/services/:tab", "destination": "/services/index.html" },
+    { "source": "/services", "destination": "/services/index.html" },
+
+    { "source": "/service/:slug", "destination": "/service/index.html" },
+    { "source": "/service", "destination": "/service/index.html" },
+
+    { "source": "/blog/:slug", "destination": "/blogread/index.html" },
+    { "source": "/blog", "destination": "/blog/index.html" },
+
+    { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" },
+    { "source": "/refund-policy", "destination": "/refund-policy/index.html" },
+    { "source": "/terms-of-service", "destination": "/terms-of-service/index.html" },
+
+    { "source": "/", "destination": "/index.html" },
+
+    { "source": "/((?!api/|_vercel/|favicon\\.ico).*)", "destination": "/index.html" }
+  ]
+}

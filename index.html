@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arvind Rai — Vedic Astrologer & Vastu Shastri</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>">
+  <meta name="description"
+    content="Arvind Rai is a distinguished Vedic Astrologer and Vastu Shastri with over 20 years of experience. Book a consultation for Kundali, Vastu, Gemstone, and more.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arvind Rai — Vedic Astrologer & Vastu Shastri">
+  <meta property="og:description"
+    content="Decode your cosmic destiny with 25+ years of Vedic wisdom. Book consultations for Kundali, Vastu, Gemstone, and more.">
+  <meta property="og:image" content="/images/arvind-hero.JPG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arvind Rai — Vedic Astrologer & Vastu Shastri">
+  <meta name="twitter:description" content="Decode your cosmic destiny with 25+ years of Vedic wisdom.">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Flatpickr CSS (date picker for booking) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_red.css">
+</head>
+
+<body>
+
+  <!-- ── Dot Navigation ── -->
+  <div class="dot-nav" id="dotNav">
+    <div class="dot active" data-l="Hero" onclick="go('hero')"></div>
+    <div class="dot" data-l="About" onclick="go('about')"></div>
+    <div class="dot" data-l="Services" onclick="go('services')"></div>
+    <div class="dot" data-l="Book" onclick="go('book')"></div>
+    <div class="dot" data-l="Calculators" onclick="go('calc')"></div>
+    <div class="dot" data-l="Media" onclick="go('media')"></div>
+    <div class="dot" data-l="Gallery" onclick="go('gallery')"></div>
+    <div class="dot" data-l="Blog" onclick="go('blog')"></div>
+    <div class="dot" data-l="Reviews" onclick="go('testi')"></div>
+    <div class="dot" data-l="Contact" onclick="go('contact')"></div>
+  </div>
+
+  <div class="shell">
+
+    <!-- ═══════ TICKER ═══════ -->
+    <div class="ticker">
+      <div class="ticker-badge">LIVE</div>
+      <div class="ticker-inner">
+        ✦ New 2026 Annual Forecasts Available · Book Now &nbsp;&nbsp;&nbsp;&nbsp; ✦ Special Holi Reading Package — 20%
+        Off &nbsp;&nbsp;&nbsp;&nbsp; ✦ Over 10,000 Satisfied Clients Across India &nbsp;&nbsp;&nbsp;&nbsp; ✦ Watch Daily
+        Horoscope on YouTube Every Morning &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <!-- ═══════ NAVBAR ═══════ -->
+    <nav class="main-nav" id="hero">
+      <a href="/" style="text-decoration:none; cursor:pointer; color:inherit;">
+        <div class="nav-logo">
+          <div class="nav-logo-icon">🪐</div>
+          <div class="nav-logo-text">
+            <div class="name">Arvind Rai</div>
+            <div class="tag">Vedic Astrologer · Vastu Shastri</div>
+          </div>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li class="active"><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#calc">Calculators</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="nav-cta-btn" onclick="scrollToServicesSection()"> Book Consultation</button>
+    </nav>
+
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Trusted by 10,000+ Families Across India</div>
+        <h1 class="hero-h1">
+          Decode Your<br><span>Cosmic Destiny</span><br>with Vedic Wisdom
+        </h1>
+        <p class="hero-sub">
+          Ancient Jyotish knowledge meets modern guidance. Get accurate readings on career, marriage, health &
+          spirituality — backed by 25+ years of practice.
+        </p>
+        <div class="hero-btns">
+          <button class="btn-saffron" onclick="scrollToServicesSection()">Book a Reading</button>
+          <button class="btn-outline-white" onclick="go('media')">Watch on YouTube</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-n">25+</div>
+            <div class="stat-l">Years Experience</div>
+          </div>
+          <div>
+            <div class="stat-n">50+</div>
+            <div class="stat-l">YT Videos</div>
+          </div>
+          <div>
+            <div class="stat-n">4.8</div>
+            <div class="stat-l">Rating</div>
+          </div>
+          <div>
+            <div class="stat-n">10K+</div>
+            <div class="stat-l">Followers</div>
+          </div>
+          <div>
+            <div class="stat-n">2+</div>
+            <div class="stat-l">Podcasts</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-layered-visual">
+          <img class="hero-layered-bg" src="/public/images/home/home-hero-chakra-bg.png" alt="" loading="eager" decoding="async" onload="this.parentElement.classList.add('has-media')" onerror="this.style.display='none'">
+          <img class="hero-layered-subject" src="/public/images/home/home-hero-subject-foreground.png" alt="Arvind Rai — Vedic Astrologer" loading="eager" decoding="async" onload="this.parentElement.classList.add('has-media')" onerror="this.style.display='none'">
+          <div class="hero-layered-fallback">Arvind Rai</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ TRUST BAR ═══════ -->
+    <div class="trust-bar">
+      <div class="trust-item">
+        <div class="trust-num">10,000+</div>
+        <div class="trust-lbl">Happy Clients</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <div class="trust-num">50+</div>
+        <div class="trust-lbl">YouTube Videos</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <div class="trust-num">10K+</div>
+        <div class="trust-lbl">Social Followers</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <div class="trust-num">25+</div>
+        <div class="trust-lbl">Years Practice</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <div class="trust-num">2+</div>
+        <div class="trust-lbl">Podcast Episodes</div>
+      </div>
+    </div>
+
+    <!-- ═══════ ABOUT ═══════ -->
+    <section class="about-section" id="about">
+      <div class="about-img-wrap">
+        <!-- IMAGE: Arvind Rai professional portrait — recommended size 600x800px, place file at images/arvind-about.jpg -->
+        <div class="about-img-main">
+          <img src="/images/arvind-about.JPG" alt="Pandit Arvind Rai" onerror="this.style.display='none'">
+          Pandit Ji's Portrait
+        </div>
+        <div class="about-badge">
+          <span class="bnum">25+</span>
+          <span class="blbl">Years of Cosmic Guidance</span>
+        </div>
+        <div class="about-floats">
+          <span class="about-float-tag">Vedic Astrologer</span>
+          <span class="about-float-tag">Certified</span>
+        </div>
+      </div>
+      <div>
+        <div class="s-tag">Who Am I</div>
+        <h2 class="s-title">Guiding Souls Through<br><em>Celestial Wisdom</em></h2>
+        <p class="s-body">A well known Vastu Expert & Astrologer, belongs to the spiritual and heritage city of India,
+          Varanasi.He was keen to learn astrology in his childhood days because of the religious atmosphere at his home.
+          At a very early stage of his life, he started in-depth study & research of vastu and astrology. And around the
+          age of nineteen he started advising people based on astrology and vastu. He achieved expertise in this field
+          by undergoing a unique form of education & training, based on the Guru-Shishya traditional methodology, under
+          Dr.Kamlakant Pandey who was a renowned lecturer in Astrology at Banaras Hindu University.</p>
+        <p class="s-body">His mentor Sri.Avdhesh Jha (Tantrik Guru) taught him the rituals and beneficial remedies based
+          on occult science as like Tantra vidya. Honorable spiritual guru Sri.Sadanand Shastri accepted him as his
+          pupil and gave him the knowledge of yoga and meditation. At present he is a very professional astrologer who
+          provides his services to his clients on prior appointment.</p>
+        <div class="about-pills">
+          <span class="pill">Vedic Astrology</span>
+          <span class="pill">Kundali Milan</span>
+          <span class="pill">Vastu Shastra</span>
+          <span class="pill">Industrial / Corporate Vastu</span>
+          <span class="pill">Prashna Kundali</span>
+          <span class="pill">Gemstone Therapy</span>
+          <span class="pill">Muhurta</span>
+        </div>
+      </div>
+    </section>
+
+    <div id="services-section"></div>
+
+    <!-- ═══════ SERVICES ═══════ -->
+    <section class="services-section" id="services">
+      <div class="s-header">
+        <div class="s-tag">Our Offerings</div>
+        <h2 class="s-title" style="color:var(--red)">Readings & <em style="color:var(--saffron2)">Consultations</em></h2>
+        <p class="services-section-sub">Explore services by category, understand details, then proceed to booking.</p>
+      </div>
+      <div class="services-tabs" id="homeServicesTabs" role="tablist" aria-label="Homepage service categories">
+        <button class="services-tab-btn active" data-service-tab="all" type="button">All</button>
+        <button class="services-tab-btn" data-service-tab="consultations" type="button">Consultations</button>
+        <button class="services-tab-btn" data-service-tab="vastu" type="button">Vastu</button>
+        <button class="services-tab-btn" data-service-tab="puja-remedies" type="button">Puja & Remedies</button>
+        <button class="services-tab-btn" data-service-tab="kundli" type="button">Kundli</button>
+        <button class="services-tab-btn" data-service-tab="reports" type="button">Reports</button>
+      </div>
+
+      <div class="services-home-meta-row">
+        <p class="services-home-count" id="homeServicesCount">Showing 8 services</p>
+        <a class="services-home-link" href="/services">View Full Services Listing →</a>
+      </div>
+
+      <div class="services-home-grid" id="homeServicesGrid" aria-live="polite">
+        <!-- Cards rendered by js/services-ui.js -->
+      </div>
+    </section>
+
+    <!-- ═══════ BOOK CONSULTATION ═══════ -->
+    <section class="book-section" id="book">
+      <div class="book-left">
+        <div class="s-tag">Book a Session</div>
+        <h2 class="s-title">Begin Your Journey<br>Towards <em style="color:var(--bhagwa)">Clarity</em></h2>
+        <p class="s-body">Fill in your details and receive a confirmation within 24 hours. Sessions available via phone
+          or Google Meet.</p>
+        <ul class="book-features">
+          <li>100% Confidential — your data is never shared</li>
+          <li>Sessions in Hindi, English & Regional Languages</li>
+          <li>Flexible timing — morning to late evening</li>
+          <li>Follow-up support via WhatsApp included</li>
+          <li>Recordings available on request</li>
+        </ul>
+      </div>
+      <div class="book-form" id="bookSectionForm">
+        <div class="form-title">Book Your Reading</div>
+        <div class="form-sub">Select a service first and complete your booking in guided steps.</div>
+        <div class="f-field">
+          <label class="f-label">Select Service</label>
+          <select class="f-input" id="bookService">
+            <option value="">Select a service...</option>
+            <option value="Janam Kundali">Janam Kundali — ₹2,500</option>
+            <option value="Kundali Milan">Kundali Milan — ₹2,100</option>
+            <option value="Industrial / Corporate Vastu">Industrial / Corporate Vastu — ₹1,25,000</option>
+            <option value="Vastu Shastra">Vastu Shastra (Residential) — ₹51,000</option>
+            <option value="Gemstone">Gemstone — As Per Requirement</option>
+            <option value="Pujan / Remedies">Pujan / Remedies — As Per Requirement</option>
+          </select>
+        </div>
+        <div class="form-sub" id="bookServiceHint" style="margin-bottom:10px;">Gemstone bookings are handled as per
+          requirement.</div>
+        <button class="btn-submit" onclick="startBookingFromForm()">Start Booking</button>
+      </div>
+    </section>
+
+    <!-- ═══════ CALCULATORS ═══════ -->
+    <!-- API UPGRADE: For accurate Vedic Moon Sign based on exact birth time and place, integrate Vedic Rishi API or Astro-Seek API — add API_KEY to .env -->
+    <!-- API UPGRADE: For accurate Vimshottari Dasha, use Swiss Ephemeris or Astro-Seek API -->
+    <!-- API UPGRADE: Integrate Astro-Seek API or Vedic Rishi API with ASTRO_API_KEY in .env for full chart -->
+    <!-- API UPGRADE: For live Panchang, use Drik Panchang API — add PANCHANG_API_KEY to .env -->
+    <section class="calc-section" id="calc">
+      <div class="s-header" style="text-align:center; margin-bottom:48px;">
+        <div class="s-tag">Free Tools</div>
+        <h2 class="s-title" style="color:var(--red)">Astrology <em style="color:var(--saffron2)">Calculators</em></h2>
+      </div>
+      <div class="calc-grid">
+        <div class="calc-card" data-calc="kundali">
+          <span class="calc-emoji">📅</span>
+          <div class="calc-name">Kundali / Birth Chart</div>
+          <div class="calc-desc">Generate your free Janam Kundali with planetary positions and house details.</div>
+          <button class="calc-btn" onclick="openCalculator('kundali')">Generate Free →</button>
+        </div>
+        <div class="calc-card" data-calc="moonsign">
+          <span class="calc-emoji">☀️</span>
+          <div class="calc-name">Sun Sign Calculator</div>
+          <div class="calc-desc">Find your Rashi (Sun Sign) and understand your personality traits.</div>
+          <button class="calc-btn" onclick="openCalculator('moonsign')">Find My Rashi →</button>
+        </div>
+        <div class="calc-card" data-calc="panchang">
+          <span class="calc-emoji">🪐</span>
+          <div class="calc-name">Panchang Today</div>
+          <div class="calc-desc">Today's Tithi, Nakshatra, Yoga, Karan and auspicious timings.</div>
+          <button class="calc-btn" onclick="openCalculator('panchang')">View Panchang →</button>
+        </div>
+        <div class="calc-card" data-calc="numerology">
+          <span class="calc-emoji">🔢</span>
+          <div class="calc-name">Numerology Report</div>
+          <div class="calc-desc">Calculate your Life Path, Destiny and Soul Urge numbers from your name & DOB.</div>
+          <button class="calc-btn" onclick="openCalculator('numerology')">Calculate →</button>
+        </div>
+        <div class="calc-card" data-calc="love">
+          <span class="calc-emoji">💑</span>
+          <div class="calc-name">Love Compatibility</div>
+          <div class="calc-desc">Check the astrological compatibility between two people by birth date.</div>
+          <button class="calc-btn" onclick="openCalculator('love')">Check Match →</button>
+        </div>
+        <div class="calc-card" data-calc="dasha">
+          <span class="calc-emoji">⏳</span>
+          <div class="calc-name">Dasha Calculator</div>
+          <div class="calc-desc">Find your current Mahadasha, Antardasha and upcoming planetary periods.</div>
+          <button class="calc-btn" onclick="openCalculator('dasha')">Check Dasha →</button>
+        </div>
+      </div>
+
+      <!-- Inline Panchang demo widget -->
+      <div class="calc-demo" id="panchangWidget">
+        <div class="calc-demo-title" id="panchangTitle">📅 Today's Panchang</div>
+        <div class="calc-demo-sub" id="panchangSub">Auspicious timings and lunar details for today</div>
+        <div class="calc-inputs" id="panchangData">
+          <!-- Panchang data will be populated by js/calculator.js -->
+        </div>
+        <div class="calc-result" id="panchangResult">
+          <div>
+            <div class="result-label">Auspicious Window (Muhurta)</div>
+            <div class="result-value" id="panchangMuhurta">Loading...</div>
+          </div>
+          <div class="result-note">Based on approximate calculations. Full Panchang updated daily at midnight.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ MEDIA — YOUTUBE ═══════ -->
+    <section class="media-section" id="media">
+      <div style="margin-bottom:36px;">
+        <div class="s-tag">Watch</div>
+        <h2 class="s-title" style="color:var(--red); margin-bottom:0;">Cosmic <em
+            style="color:var(--saffron2)">Conversations</em></h2>
+      </div>
+      <div class="yt-grid-2x2">
+        <div class="yt-card">
+          <div class="yt-thumb">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qEh7DQVJBIs?si=hBr1-BXcj4FmsmZ0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="yt-cat">Annual Podcast · Featured</div>
+          <div class="yt-title">जीवन में वास्तु शास्त्र के असली मायने?</div>
+        </div>
+
+        <div class="yt-card">
+          <div class="yt-thumb">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/44xCpAoiKKY?si=uuOkc6ImAZrRpmmf"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="yt-cat">SadheSati Retrograde</div>
+          <div class="yt-title">Sahni Sadesati Effects and Remedies</div>
+        </div>
+
+        <div class="yt-card">
+          <div class="yt-thumb">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/113OUrGZopE?si=J5dE5ymAL9Gyu8BT"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="yt-cat">ABP News</div>
+          <div class="yt-title">2019 नवरत्न: साल 2019 में कौन कर पाएगा कमाल</div>
+        </div>
+
+        <div class="yt-card">
+          <div class="yt-thumb">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C6ukI81R0Hg?si=oQRkxsv254moyrao"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="yt-cat">Match Making</div>
+          <div class="yt-title">Right Method of Judging Marriage Compatibility
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Lightbox Modal -->
+    <div class="video-lightbox" id="videoLightbox" onclick="closeVideoLightbox(event)">
+      <button class="video-lightbox-close" onclick="closeVideoLightbox(event)">✕</button>
+      <div class="video-lightbox-content">
+        <iframe id="videoIframe" src="" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- ═══════ GALLERY ═══════ -->
+    <section class="gallery-section" id="gallery">
+      <div class="s-header"
+        style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px;">
+        <div>
+          <div class="s-tag">Gallery</div>
+          <h2 class="s-title" style="color:var(--red); margin-bottom:0;">Moments & <em
+              style="color:var(--saffron2)">Milestones</em></h2>
+        </div>
+        <button class="btn-saffron" style="font-size:11px; padding:9px 20px;" id="galleryToggleBtn"
+          onclick="toggleGallery()">View All Photos →</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="g-item" onclick="openGalleryLightbox(0)"><img src="/images/gallery-1.jpg" alt="Gallery 1"></div>
+        <div class="g-item" onclick="openGalleryLightbox(1)"><img src="/images/gallery-2.jpg" alt="Gallery 2"></div>
+        <div class="g-item" onclick="openGalleryLightbox(2)"><img src="/images/gallery-3.jpg" alt="Gallery 3"></div>
+        <div class="g-item" onclick="openGalleryLightbox(3)"><img src="/images/gallery-4.jpg" alt="Gallery 4"></div>
+        <div class="g-item" onclick="openGalleryLightbox(4)"><img src="/images/gallery-5.jpg" alt="Gallery 5"></div>
+        <div class="g-item" onclick="openGalleryLightbox(5)"><img src="/images/gallery-6.JPG" alt="Gallery 6"></div>
+        <div class="g-item g-hidden" onclick="openGalleryLightbox(6)"><img src="/images/gallery-7.JPG" alt="Gallery 7">
+        </div>
+        <div class="g-item g-hidden" onclick="openGalleryLightbox(7)"><img src="/images/gallery-8.jpg" alt="Gallery 8">
+        </div>
+        <div class="g-item g-hidden" onclick="openGalleryLightbox(8)"><img src="/images/gallery-9.jpg" alt="Gallery 9">
+        </div>
+        <div class="g-item g-hidden" onclick="openGalleryLightbox(9)"><img src="/images/gallery-10.jpg" alt="Gallery 10">
+        </div>
+        <div class="g-item g-hidden" onclick="openGalleryLightbox(10)"><img src="/images/gallery-11.jpg"
+            alt="Gallery 11"></div>
+        <div class="g-item g-hidden" onclick="openGalleryLightbox(11)"><img src="/images/gallery-12.JPG"
+            alt="Gallery 12"></div>
+      </div>
+    </section>
+
+    <!-- Gallery Lightbox -->
+    <div class="gallery-lightbox" id="galleryLightbox">
+      <button class="gallery-lb-close" onclick="closeGalleryLightbox()">✕</button>
+      <button class="gallery-lb-prev" onclick="galleryLightboxNav(-1)">‹</button>
+      <div class="gallery-lb-img-wrap">
+        <img id="galleryLbImg" src="" alt="Gallery">
+      </div>
+      <button class="gallery-lb-next" onclick="galleryLightboxNav(1)">›</button>
+    </div>
+
+    <!-- ═══════ BLOG ═══════ -->
+    <section class="blog-section" id="blog">
+      <div style="margin-bottom:40px;">
+        <div>
+          <div class="s-tag">Knowledge Base</div>
+          <h2 class="s-title" style="color:var(--red); margin-bottom:0;">From the <em
+              style="color:var(--saffron2)">Stars</em></h2>
+        </div>
+      </div>
+      <div class="blog-grid" id="blogHomeGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- ═══════ TESTIMONIALS ═══════ -->
+    <section class="testi-section" id="testi">
+      <div class="s-header">
+        <div class="s-tag">Client Stories</div>
+        <h2 class="s-title">What Our Clients <em style="color:var(--bhagwa)">Say</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-q">"</div>
+          <div class="testi-text">Very good moment with Arvind Rai as Astrologer. He speaks really good English so as a
+            foreigner it was easy to understand the analysis of my astral map. I fully recommend !</div>
+          <div class="testi-author">
+            <div class="testi-av">🙏</div>
+            <div>
+              <div class="testi-name">ALIBERT Clara, France</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-q">"</div>
+          <div class="testi-text">One of the best Astrologer with immense knowledge. Awesome services and remedies for
+            the problems he gave me. I was able to extend my family after 6 years of marriage with his remedies he gave
+            me on phone even though I am miles away here in London.
+            I will give you a call for birth chart for my new born daughter soon.
+            Thanks Arvind sir for your perfect Vastu Guidance and Astrology predictions. Feeling happy and blessed to
+            have you to provide perfect guidance for my all problems.</div>
+          <div class="testi-author">
+            <div class="testi-av">🙏</div>
+            <div>
+              <div class="testi-name">Monika Tyagi, London</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-q">"</div>
+          <div class="testi-text">Excellent genuine honest and amazing advice always given by Pandit Jee
+
+          </div>
+          <div class="testi-author">
+            <div class="testi-av">🙏</div>
+            <div>
+              <div class="testi-name">Advocate Kappil Cchandna, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ LOCATE US ═══════ -->
+    <!-- ENV: Replace GOOGLE_MAPS_API_KEY in .env with your key from Google Cloud Console -->
+    <!-- ENV: Enable "Maps Embed API" in your Google Cloud Console project -->
+    <section class="locate-section" id="locate">
+      <div class="locate-header">
+        <div class="s-tag">Find Us</div>
+        <h2 class="s-title" style="color:var(--red)">Visit <em style="color:var(--saffron2)">Arvind Rai</em></h2>
+        <p class="s-body" style="max-width:540px;">Come meet us in person for a consultation or Vastu site visit. We are
+          conveniently located and welcome visitors by appointment.</p>
+        <div class="locate-rating-row">
+          <div class="locate-rating-badge">
+            <div class="lrat-stars">★★★★★</div>
+            <div class="lrat-num">4.8</div>
+            <div class="lrat-label">Google Rating</div>
+          </div>
+          <div class="locate-rating-badge">
+            <div class="lrat-icon">💬</div>
+            <div class="lrat-num">350+</div>
+            <div class="lrat-label">Reviews</div>
+          </div>
+          <div class="locate-rating-badge">
+            <div class="lrat-icon">📍</div>
+            <div class="lrat-num">10K+</div>
+            <div class="lrat-label">Followers</div>
+          </div>
+        </div>
+        <div class="locate-info-list">
+          <div class="locate-info-item"><span class="li-icon">📍</span>
+            <div>
+              <div class="li-label">Address</div>
+              <div class="li-val">Arvind Rai — Vedic Astrologer & Vastu Shastri<br>Varanasi, Uttar Pradesh, India</div>
+            </div>
+          </div>
+          <div class="locate-info-item"><span class="li-icon">🕐</span>
+            <div>
+              <div class="li-label">Visiting Hours</div>
+              <div class="li-val">Mon – Sat &nbsp;|&nbsp; 9 AM – 7 PM IST</div>
+            </div>
+          </div>
+          <!-- ENV: Replace XXXXXXXXXX with Arvind Rai's WhatsApp number -->
+          <div class="locate-info-item"><span class="li-icon">📞</span>
+            <div>
+              <div class="li-label">Call / WhatsApp</div>
+              <div class="li-val"><a
+                  href="https://wa.me/+917709240111?text=Namaste%20Arvind%20Rai%20Ji%2C%20I%20have%20a%20query">+91
+                  7709240111</a></div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-saffron" style="margin-top:24px; font-size:12px;"
+          onclick="window.open('https://maps.app.goo.gl/T3S93D9zwTuY9aC2A','_blank')">Get Directions →</button>
+      </div>
+      <div class="locate-map-wrap">
+        <div class="locate-map-card">
+          <div class="map-header-bar">
+            <div class="map-dot red"></div>
+            <div class="map-dot yellow"></div>
+            <div class="map-dot green"></div>
+            <span class="map-bar-label">📍 Arvind Rai · Varanasi, Uttar Pradesh</span>
+          </div>
+          <!-- Google Maps Embed — uses free Embed API (no billing needed for basic embed) -->
+          <!-- Falls back to a working embed URL if no API key is set -->
+          <div class="map-iframe-wrap">
+            <iframe id="googleMapIframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.621807103097!2d82.99757747512982!3d25.28330467765564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e318ccc4ef5dd%3A0x1cd81a5a10f0076f!2sArvind%20Rai%20Best%20Astrologer%20and%20Vastu%20Expert!5e0!3m2!1sen!2sin!4v1772807013581!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-footer-bar">
+            <div class="map-rating-pill">⭐ 4.8 &nbsp;·&nbsp; <span style="opacity:0.7;">350+ Reviews on Google</span>
+            </div>
+            <a class="map-gmb-btn" href="https://maps.app.goo.gl/T3S93D9zwTuY9aC2A" target="_blank">Open in Maps ↗</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ FAQ ═══════ -->
+    <section class="faq-section" id="faq">
+      <div>
+        <div class="s-tag">Common Questions</div>
+        <h2 class="s-title" style="color:var(--red)">Frequently<br><em style="color:var(--saffron2)">Asked
+            Questions</em></h2>
+        <p class="s-body" style="margin-top:12px;">Everything you need to know before booking your first reading with
+          Arvind Rai.</p>
+        <div
+          style="margin-top:32px; background:linear-gradient(135deg,var(--red) 0%,var(--saffron) 100%); border-radius:20px; padding:30px; color:#fff;">
+          <div style="font-size:14px; font-weight:600; margin-bottom:10px; color:var(--gold);">Still have questions?
+          </div>
+          <div style="font-size:12.5px; color:rgba(255,255,255,0.8); line-height:1.7; margin-bottom:18px;">Reach out
+            directly on WhatsApp or email and our team will respond within a few hours.</div>
+          <!-- ENV: Replace XXXXXXXXXX with Arvind Rai's WhatsApp number -->
+          <a href="https://wa.me/917709240111?text=Namaste%20Arvind%20Rai%20Ji%2C%20I%20have%20a%20query"
+            target="_blank" style="text-decoration:none;">
+            <button class="btn-saffron" style="font-size:12px;">Chat on WhatsApp</button>
+          </a>
+        </div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q open" onclick="toggleFaq(this)">Do I need my exact birth time for a reading? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a show">Exact birth time gives the most accurate Ascendant and house placements. However, even
+            without it, we can do meaningful readings using Moon chart and other techniques. Please share the closest
+            approximate time known.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">How long is a typical consultation? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a">There is no fixed duration for a consultation. The session continues until your concerns
+            are fully discussed and addressed. You are welcome to ask as many questions as needed during this time.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I book a session from outside India? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a">Absolutely. We regularly serve clients in the USA, UK, UAE, Canada and Singapore. Sessions
+            via Google Meet work seamlessly across time zones. Payment via international cards accepted.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">What languages are consultations available in? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a">Guruji offers consultations in both Hindi and English to ensure clear and comfortable communication.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Is my data and information kept private? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a">Yes, 100%. Your birth details, questions, and session recordings are never shared with any
+            third party under any circumstances. We take client privacy very seriously.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ CONTACT ═══════ -->
+    <section class="contact-section" id="contact">
+      <div class="contact-info">
+        <div class="s-tag">Get in Touch</div>
+        <h2 class="s-title" style="color:var(--red)">Let the Stars<br><em style="color:var(--saffron2)">Guide You</em>
+        </h2>
+        <p class="s-body">Reach out with your query and we will get back within 24 hours to confirm your session
+          details.</p>
+        <div class="c-item">
+          <div class="c-icon">📧</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val">arvindastro@gmail.com</div>
+          </div>
+        </div>
+        <!-- ENV: Replace XXXXXXXXXX with Arvind Rai's WhatsApp number -->
+        <div class="c-item">
+          <div class="c-icon">📞</div>
+          <div>
+            <div class="c-label">Phone / WhatsApp</div>
+            <div class="c-val"><a
+                href="https://wa.me/917709240111?text=Namaste%20Arvind%20Rai%20Ji%2C%20I%20have%20a%20query">+91
+                7709240111</a></div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">🌐</div>
+          <div>
+            <div class="c-label">Session Mode</div>
+            <div class="c-val">Phone · Google Meet · In Person (Varanasi)</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">🕐</div>
+          <div>
+            <div class="c-label">Working Hours</div>
+            <div class="c-val">Mon–Sat &nbsp;|&nbsp; 9 AM – 7 PM IST</div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a class="soc-btn" href="https://www.youtube.com/@ArvindRai" target="_blank">
+            <img src="/images/YT.jpg" alt="YouTube">
+          </a>
+
+          <a class="soc-btn" href="https://www.instagram.com/swaami_arvind/" target="_blank">
+            <img src="/images/IG.png" alt="Instagram">
+          </a>
+
+          <a class="soc-btn" href="https://www.facebook.com/ArvindRaiJi/" target="_blank">
+            <img src="/images/FB.jpg" alt="Facebook">
+          </a>
+
+          <a class="soc-btn" href="https://www.linkedin.com/in/arvindraiji" target="_blank">
+            <img src="/images/IN.jpg" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-box">
+        <div class="form-title">Send a Message</div>
+        <div class="form-sub">We reply within 24 working hours</div>
+        <!-- ENV: Set EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY in js/main.js — get from emailjs.com -->
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+          <div class="f-row">
+            <div class="f-field"><label class="f-label">Name</label><input class="f-input" name="name"
+                placeholder="Your full name" type="text" required></div>
+            <div class="f-field"><label class="f-label">Email</label><input class="f-input" name="email"
+                placeholder="your@email.com" type="email" required></div>
+          </div>
+          <div class="f-field"><label class="f-label">Phone</label><input class="f-input" name="phone"
+              placeholder="+91 XXXXX XXXXX" type="text"></div>
+          <div class="f-field"><label class="f-label">Subject</label><input class="f-input" name="subject"
+              placeholder="e.g. Career Reading, Kundali, Vastu..." type="text" required></div>
+          <div class="f-field"><label class="f-label">Your Message</label><textarea class="f-input" name="message"
+              style="height:120px; resize:none;" placeholder="Describe what you'd like to know..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="contactSubmitBtn">Send Message</button>
+        </form>
+        <div id="contactFormMsg" style="margin-top:12px; font-size:13px; display:none;"></div>
+      </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">🪐 Arvind Rai</div>
+          <div class="footer-tagline">Ancient Vedic wisdom for the modern soul. Helping thousands find direction, peace,
+            and purpose through the science of Jyotish and Vastu Shastra since 2000.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="go('services')">Janam Kundali</li>
+            <li onclick="go('services')">Kundali Milan</li>
+            <li onclick="go('services')">Industrial / Commercial Vastu</li>
+            <li onclick="go('services')">Vastu Shastra</li>
+            <li onclick="go('services')">Gemstone</li>
+            <li onclick="go('services')">Pujan / Remedies</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links">
+            <li onclick="go('calc')">Free Calculators</li>
+            <li onclick="go('calc')">Daily Horoscope</li>
+            <li onclick="go('calc')">Panchang</li>
+            <li><a href="/blog">Blog / Articles</a></li>
+            <li onclick="go('media')">YouTube Channel</li>
+            <li onclick="go('media')">Podcast</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <ul class="footer-links">
+            <li onclick="go('about')">About Guruji</li>
+            <li onclick="scrollToServicesSection()">Book a Session</li>
+            <li onclick="go('contact')">Contact Us</li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+            <li><a href="/refund-policy">Refund Policy</a></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 VaidikKarma Workshop. All rights reserved.</span>
+        <span>Made with ❤️ & cosmic intent</span>
+      </div>
+    </footer>
+
+  </div><!-- /shell -->
+
+  <!-- ═══════ BOOKING MODAL ═══════ -->
+  <!-- ENV: CLIENT_ID and CLIENT_SECRET in backend/.env for PhonePe -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBookingModal()">✕</button>
+      <div class="form-title" id="bookingModalTitle">Book Your Consultation</div>
+      <div class="form-sub" id="bookingModalSub">Complete the steps below to book and pay</div>
+
+      <!-- Progress Steps -->
+      <div class="booking-steps" id="bookingSteps">
+        <div class="booking-step active"></div>
+        <div class="booking-step"></div>
+        <div class="booking-step"></div>
+        <div class="booking-step"></div>
+      </div>
+
+      <!-- Step 1: Conditional Details -->
+      <div class="step-content active" id="step1">
+        <div id="dynamicFormContainer"></div>
+        <button class="btn-next" onclick="bookingNext(1)">Next — Select Date →</button>
+      </div>
+
+      <!-- Step 2: Select Date -->
+      <div class="step-content" id="step2">
+        <div class="f-field">
+          <label class="f-label">Select Booking Date</label>
+          <input class="f-input" id="modalDate" placeholder="Pick a date..." type="text" readonly>
+        </div>
+        <p class="booking-note">Time will be assigned by astrologer after booking confirmation</p>
+        <button class="btn-next" onclick="bookingNext(2)">Next — Review Confirmation →</button>
+        <button class="btn-back" onclick="bookingBack(2)">← Back</button>
+      </div>
+
+      <!-- Step 3: Confirmation -->
+      <div class="step-content" id="step3">
+        <div class="booking-summary" id="bookingSummary">
+          <!-- Summary populated dynamically -->
+        </div>
+        <div class="booking-action-row">
+          <button class="btn-back booking-action-btn" onclick="editBookingDetails()">Edit Details</button>
+          <button class="btn-next booking-action-btn" onclick="bookingNext(3)">Confirm & Continue →</button>
+        </div>
+        <button class="btn-back" onclick="bookingBack(3)">← Back</button>
+      </div>
+
+      <!-- Step 4: Payment Gateway -->
+      <div class="step-content" id="step4">
+        <div class="booking-summary" id="paymentPreview">
+          <!-- Payment preview populated dynamically -->
+        </div>
+        <button class="btn-next" onclick="initiateBookingPayment()" id="payBtn">Proceed to Payment Gateway</button>
+        <button class="btn-back" onclick="bookingBack(4)">← Back</button>
+
+        <div class="confirmation-box booking-final-state" id="bookingFinalState" style="display:none; margin-top:20px;">
+          <div class="check-icon">✓</div>
+          <h3>Booking Confirmed!</h3>
+          <p id="confirmationText">Your consultation has been booked successfully. You will receive a confirmation on
+            WhatsApp shortly.</p>
+          <div class="booking-summary" id="confirmationSummary" style="margin-top:20px; text-align:left;"></div>
+          <!-- ENV: Replace XXXXXXXXXX with Arvind Rai's WhatsApp number -->
+          <a href="https://wa.me/917709240111?text=Namaste%20Arvind%20Rai%20Ji%2C%20I%20have%20booked%20a%20consultation"
+            target="_blank" style="text-decoration:none;">
+            <button class="btn-next" style="margin-top:20px;">💬 Message on WhatsApp</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ CALCULATOR MODAL ═══════ -->
+  <div class="modal-overlay" id="calcModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCalcModal()">✕</button>
+      <div id="calcModalContent">
+        <!-- Calculator content loaded dynamically by js/calculator.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ TOAST container ═══════ -->
+  <div id="toastContainer"></div>
+
+  <!-- ═══════ SCRIPTS ═══════ -->
+  <!-- Flatpickr (date picker) -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!-- EmailJS -->
+  <!-- ENV: Set EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY in js/main.js — get from emailjs.com -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- PhonePe Checkout (IFRAME PayPage invocation) -->
+  <script src="https://mercury.phonepe.com/web/bundle/checkout.js"></script>
+
+  <!-- App Scripts -->
+  <script src="/js/services-data.js"></script>
+  <script src="/js/services-ui.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/blog-data.js"></script>
+  <script src="/js/blog.js"></script>
+  <script src="/js/calculator.js"></script>
+  <script src="/js/booking.js"></script>
+  <script src="/js/payment.js"></script>
+</body>
+
+</html>
