@@ -14,7 +14,7 @@ var BLOG_POSTS = [
     "tag": "Featured",
     "date": "Mar 30, 2026",
     "readTime": "17 min read",
-    "image": "/images/blog1.jpg",
+    "image": "/images/blog1.webp",
     "content": [
       "Introduction As the new year gets closer, many people want to know what will happen in the year. A yearly horoscope can help you find the main themes and feelings you may feel the year. If you want to know about your job, love life, or personal growth, your zodiac sign can guide you.",
       "At the beginning of the year, knowing what might happen helps you get ready for hard times and take new chances. This way, you can start the year with hope and make the most of your journey in 2026. Yearly Horoscope Forecast: What to Expect in 2026 The horoscope for 2026 shows a year that brings forward steps and clear thinking.",
@@ -103,7 +103,7 @@ var BLOG_POSTS = [
     "tag": "Popular",
     "date": "Mar 31, 2026",
     "readTime": "16 min read",
-    "image": "/images/blog2.jpg",
+    "image": "/images/blog2.webp",
     "content": [
       "In the past, people would meet with an astrologer who had many years of experience for kundali matching. They did this using manual math and face-to-face meetings. All of this would take a lot of time.",
       "The main aim was to check how well two people matched based on what the family astrologer thought. Today, online kundali matching has changed how people do this. It is now much easier for modern couples.",
@@ -176,7 +176,7 @@ var BLOG_POSTS = [
     "tag": "New",
     "date": "Mar 31, 2026",
     "readTime": "14 min read",
-    "image": "/images/blog3.png",
+    "image": "/images/blog3.webp",
     "content": [
       "Choosing the right piece of land is the first thing you do before you build your dream home or a commercial space. Vastu Shastra, which is an ancient Indian science, says that each plot has a fixed form and gives off energy. Picking the proper plot is needed if you want it to bring you positive energy, prosperity, and happiness.",
       "This guide will show you the key ideas of Vastu for picking a plot. It will help you make a good choice so you can have a happy life. Key Principles of Land Selection in Vastu Shastra Vastu Shastra offers a clear set of rules for the selection of a plot.",
@@ -243,7 +243,7 @@ var BLOG_POSTS = [
     "tag": "Popular",
     "date": "Mar 31, 2026",
     "readTime": "21 min read",
-    "image": "/images/blog4.jpg",
+    "image": "/images/blog4.webp",
     "content": [
       "Your office is not just where you work. It is the place your goals take shape. The energy in your office space can change how you feel and how well you do your job.",
       "It can also help you, your business, grow and be strong. Vastu Shastra is the ancient Indian science of architecture. It plays a crucial role in this.",

@@ -139,17 +139,17 @@
     {
       title: 'Personalized Guidance',
       description: 'Every reading is tailored to your exact context, priorities, and life stage.',
-      image: '/public/images/services/[slug]-highlight-1.jpg'
+      image: '/public/images/services/[slug]-highlight-1.webp'
     },
     {
       title: 'Structured Process',
       description: 'You receive a clear step-by-step flow so there is no confusion about outcomes.',
-      image: '/public/images/services/[slug]-highlight-2.jpg'
+      image: '/public/images/services/[slug]-highlight-2.webp'
     },
     {
       title: 'Actionable Direction',
       description: 'Practical recommendations are shared in simple language for immediate application.',
-      image: '/public/images/services/[slug]-highlight-3.jpg'
+      image: '/public/images/services/[slug]-highlight-3.webp'
     }
   ];
 
